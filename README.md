@@ -11,13 +11,18 @@ Alternatively tried training a basic CNN model for the classification task. Also
 Example:
 
 Running OCR and Classifying
+
 Starting model
+
 Model, vectorizer and labels loaded successfully!
+
 Reading file
 
 OCR and Classification Time: 3.42 seconds
+
 Running LLM to extract data
 LLM Data Extraction Time: 3.34 seconds
+
 Data pulled
 Doc type: bank_statements, data: {'person_name': 'mrs baddu,'}
 
