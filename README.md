@@ -2,7 +2,31 @@
 Appian Challenge '24
 
 This is our submission to the Appian AI Application challenge conducted by Shastraa. 
-We are working on Problem Statement 1
+We are working on Problem Statement 1.
+
+Classifying documents by text extraction using OCR-tesseract. Trained a XGBoost classifier on the vectorized text (TF-IDF vectorizer) from the document to classify it into document categories like bank statements, aadhar card, driving license, passport, etc. Also identifies the user it belongs to and creates an entry in the database to store the user documents in one place.
+
+Alternatively tried training a basic CNN model for the classification task. Also tried Llama prompt-based classification. Text extraction and XGB classifier gave best results.
+
+Example:
+
+Running OCR and Classifying
+Starting model
+Model, vectorizer and labels loaded successfully!
+Reading file
+
+OCR and Classification Time: 3.42 seconds
+Running LLM to extract data
+LLM Data Extraction Time: 3.34 seconds
+Data pulled
+Doc type: bank_statements, data: {'person_name': 'mrs baddu,'}
+
+Copying the file
+File Operations Time: 0.00 seconds
+
+Updating Database...
+
+On a one-page bank-statement pdf of mrs baddu, scrapped from internet.
 
 
 
